@@ -18,16 +18,17 @@ function App() {
         <h1 className="title">Rick & Morty</h1>
 
         {characters ? (
-          <Characters characters={characters} setCharacters={setCharacters} />
-        ) : (
+          <Characters characters={characters} setCharacters={setCharacters}/>
           //{/* Esta seria los props */}
+        ) : (
           <>
             <img src={imageRickMorty} alt="Rick & Morty" className="img-home" />
             <button onClick={reqApi} className="btn-search">
               Buscar Personajes
             </button>
-          </>
+            </>
         )}
+
       </header>
     </div>
   );
